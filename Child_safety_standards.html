@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Standards de sécurité - Protection des enfants contre les abus sexuels et l'exploitation (CSAE)</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        :root {
+            --primary-color: #4285F4;
+            --secondary-color: #34A853;
+            --accent-color: #EA4335;
+            --light-color: #F8F9FA;
+            --dark-color: #202124;
+            --text-color: #333;
+            --text-light: #666;
+            --border-color: #DADCE0;
+            --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+        
+        body {
+            background-color: #f5f7fa;
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        header {
+            background: linear-gradient(135deg, var(--primary-color), #5C6BC0);
+            color: white;
+            padding: 30px 0;
+            box-shadow: var(--shadow);
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .logo-icon {
+            background-color: white;
+            color: var(--primary-color);
+            width: 50px;
+            height: 50px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .logo-text h1 {
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+        
+        .logo-text p {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+        
+        .contact-info {
+            text-align: right;
+        }
+        
+        .contact-info h3 {
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+        
+        .contact-info p {
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        
+        /* Main content */
+        .page-title {
+            text-align: center;
+            margin: 40px 0 30px;
+        }
+        
+        .page-title h2 {
+            font-size: 32px;
+            color: var(--dark-color);
+            margin-bottom: 10px;
+        }
+        
+        .page-title p {
+            color: var(--text-light);
+            font-size: 18px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .card {
+            background-color: white;
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: var(--shadow);
+            border-top: 4px solid var(--primary-color);
+        }
+        
+        .card-title {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 25px;
+            color: var(--primary-color);
+        }
+        
+        .card-title i {
+            font-size: 24px;
+        }
+        
+        .card-title h3 {
+            font-size: 22px;
+        }
+        
+        .card-content {
+            font-size: 16px;
+        }
+        
+        .card-content p {
+            margin-bottom: 20px;
+        }
+        
+        .card-content ul, .card-content ol {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .card-content li {
+            margin-bottom: 10px;
+        }
+        
+        .highlight {
+            background-color: rgba(66, 133, 244, 0.08);
+            border-left: 4px solid var(--primary-color);
+            padding: 20px;
+            border-radius: 0 8px 8px 0;
+            margin: 25px 0;
+        }
+        
+        .contact-box {
+            background-color: rgba(52, 168, 83, 0.08);
+            border: 1px solid var(--secondary-color);
+            border-radius: 10px;
+            padding: 25px;
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .contact-box h4 {
+            color: var(--secondary-color);
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+        
+        .contact-details {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 15px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+        }
+        
+        .contact-item i {
+            color: var(--primary-color);
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+            padding: 40px 0 20px;
+            margin-top: 50px;
+        }
+        
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .footer-section h4 {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: #E8EAED;
+        }
+        
+        .footer-section ul {
+            list-style: none;
+        }
+        
+        .footer-section ul li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-section ul li a {
+            color: #BDC1C6;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-section ul li a:hover {
+            color: white;
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #3C4043;
+            color: #9AA0A6;
+            font-size: 14px;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+                gap: 20px;
+            }
+            
+            .contact-info {
+                text-align: center;
+            }
+            
+            .page-title h2 {
+                font-size: 26px;
+            }
+            
+            .card {
+                padding: 20px;
+            }
+            
+            .card-title h3 {
+                font-size: 20px;
+            }
+            
+            .footer-content {
+                flex-direction: column;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .contact-details {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header avec informations de contact -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h1>SafeConnect</h1>
+                        <p>Standards de sécurité pour la protection des enfants</p>
+                    </div>
+                </div>
+                <div class="contact-info">
+                    <h3>Contact Sécurité</h3>
+                    <p><i class="fas fa-envelope"></i> safety@safeconnect-app.com</p>
+                    <p><i class="fas fa-phone"></i> +33 1 23 45 67 89</p>
+                    <p><i class="fas fa-globe"></i> www.safeconnect-app.com/safety</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenu principal -->
+    <main class="container">
+        <div class="page-title">
+            <h2>Standards de sécurité contre les abus sexuels et l'exploitation des enfants (CSAE)</h2>
+            <p>Cette page présente les mesures que nous mettons en œuvre pour protéger les enfants et les adolescents contre les abus et l'exploitation sexuelle sur notre plateforme.</p>
+        </div>
+
+        <!-- Section 1: Introduction -->
+        <section class="card">
+            <div class="card-title">
+                <i class="fas fa-info-circle"></i>
+                <h3>Engagement de sécurité</h3>
+            </div>
+            <div class="card-content">
+                <p><strong>SafeConnect</strong> s'engage à fournir un environnement en ligne sûr pour tous ses utilisateurs, en particulier les enfants et les adolescents. Nous adhérons strictement à la politique de sécurité enfantine de Google Play Store et nous conformons à toutes les lois et réglementations applicables concernant la protection des mineurs.</p>
+                
+                <div class="highlight">
+                    <p>Notre application est conçue pour les utilisateurs de 18 ans et plus. Nous mettons en œuvre des mesures rigoureuses de vérification d'âge et de modération du contenu pour empêcher l'accès des mineurs et protéger tous les utilisateurs contre les abus et l'exploitation.</p>
+                </div>
+                
+                <p>Ces standards de sécurité sont régulièrement mis à jour pour refléter les meilleures pratiques de l'industrie et les évolutions législatives en matière de protection des enfants en ligne.</p>
+            </div>
+        </section>
+
+        <!-- Section 2: Mesures de protection -->
+        <section class="card">
+            <div class="card-title">
+                <i class="fas fa-user-shield"></i>
+                <h3>Mesures de protection mises en œuvre</h3>
+            </div>
+            <div class="card-content">
+                <p>Pour prévenir et lutter contre les abus sexuels et l'exploitation des enfants (CSAE), nous avons mis en place les mesures suivantes :</p>
+                
+                <ol>
+                    <li><strong>Vérification d'âge stricte</strong> : Utilisation de systèmes de vérification d'âge tiers et de vérification d'identité pour s'assurer que tous les utilisateurs ont au moins 18 ans.</li>
+                    <li><strong>Modération proactive du contenu</strong> : Combinaison de technologies d'IA et d'équipes de modérateurs humains pour détecter et supprimer tout contenu inapproprié ou suspect.</li>
+                    <li><strong>Signalement simplifié</strong> : Fonctionnalités de signalement accessibles en un clic pour tous les contenus et utilisateurs suspects, avec suivi garanti sous 24 heures.</li>
+                    <li><strong>Chiffrement des conversations</strong> : Toutes les communications privées sont chiffrées de bout en bout pour protéger la vie privée des utilisateurs.</li>
+                    <li><strong>Éducation et sensibilisation</strong> : Ressources éducatives intégrées à l'application pour informer les utilisateurs sur les pratiques sécuritaires en ligne.</li>
+                    <li><strong>Coopération avec les autorités</strong> : Protocoles établis pour collaborer avec les forces de l'ordre et les organisations de protection de l'enfance en cas de suspicion d'abus.</li>
+                </ol>
+                
+                <p>Nous utilisons également des technologies de pointe pour détecter les comportements suspects et les tentatives de contournement des mesures de sécurité.</p>
+            </div>
+        </section>
+
+        <!-- Section 3: Signalement -->
+        <section class="card">
+            <div class="card-title">
+                <i class="fas fa-flag"></i>
+                <h3>Comment signaler un contenu ou un comportement préoccupant</h3>
+            </div>
+            <div class="card-content">
+                <p>La sécurité de notre communauté est une responsabilité partagée. Nous encourageons tous les utilisateurs à signaler tout contenu ou comportement qui semble inapproprié, suspect ou contraire à nos conditions d'utilisation.</p>
+                
+                <h4>Procédure de signalement :</h4>
+                <ul>
+                    <li>Dans l'application : Utilisez le bouton "Signaler" disponible sur chaque profil, message ou publication</li>
+                    <li>Par email : Envoyez un email détaillé à <strong>report@safeconnect-app.com</strong> avec les preuves et informations pertinentes</li>
+                    <li>Pour les situations d'urgence impliquant un danger immédiat : Contactez directement les autorités locales puis informez-nous</li>
+                </ul>
+                
+                <div class="highlight">
+                    <p><strong>Engagement de réponse</strong> : Nous nous engageons à examiner tous les signalements dans un délai maximum de 24 heures. Les signalements concernant des mineurs ou des contenus liés aux abus sexuels sont traités en priorité absolue.</p>
+                </div>
+                
+                <p>Tous les signalements sont traités de manière confidentielle. Nous protégeons l'identité des personnes signalant de bonne foi et prenons des mesures appropriées contre les signalements abusifs.</p>
+            </div>
+        </section>
+
+        <!-- Section 4: Contact -->
+        <section class="card">
+            <div class="card-title">
+                <i class="fas fa-headset"></i>
+                <h3>Contact et ressources supplémentaires</h3>
+            </div>
+            <div class="card-content">
+                <p>Pour toute question concernant notre politique de sécurité, ou pour obtenir de l'aide concernant un problème de sécurité sur notre plateforme, vous pouvez nous contacter par les moyens suivants :</p>
+                
+                <div class="contact-box">
+                    <h4>Équipe de sécurité dédiée</h4>
+                    <p>Notre équipe de sécurité est disponible 7j/7 pour répondre à vos préoccupations concernant la sécurité des enfants et le respect de nos standards.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>Email sécurité</strong>
+                                <p>safety@safeconnect-app.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <strong>Téléphone</strong>
+                                <p>+33 1 23 45 67 89</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-globe"></i>
+                            <div>
+                                <strong>Site web</strong>
+                                <p>www.safeconnect-app.com/safety</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <h4>Ressources externes :</h4>
+                <ul>
+                    <li><a href="https://www.internetmatters.org/" target="_blank">Internet Matters</a> - Ressources pour la sécurité en ligne des enfants</li>
+                    <li><a href="https://www.missingkids.org/home" target="_blank">National Center for Missing & Exploited Children</a></li>
+                    <li><a href="https://www.ceop.police.uk/Safety-Centre/" target="_blank">CEOP Safety Centre</a> - Centre de sécurité en ligne</li>
+                    <li><a href="https://www.police.fr/portail/accueil" target="_blank">Portail des forces de l'ordre françaises</a></li>
+                </ul>
+                
+                <p><strong>Dernière mise à jour :</strong> 15 octobre 2023<br>
+                <strong>Prochaine révision prévue :</strong> 15 avril 2024</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>SafeConnect</h4>
+                    <ul>
+                        <li><a href="#">À propos de nous</a></li>
+                        <li><a href="#">Conditions d'utilisation</a></li>
+                        <li><a href="#">Politique de confidentialité</a></li>
+                        <li><a href="#">Centre de sécurité</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Assistance</h4>
+                    <ul>
+                        <li><a href="#">Centre d'aide</a></li>
+                        <li><a href="#">Signaler un problème</a></li>
+                        <li><a href="#">Contactez-nous</a></li>
+                        <li><a href="#">Statut du service</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Sécurité</h4>
+                    <ul>
+                        <li><a href="#">Standards CSAE (cette page)</a></li>
+                        <li><a href="#">Conseils de sécurité</a></li>
+                        <li><a href="#">Vérification d'identité</a></li>
+                        <li><a href="#">Transparence</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 SafeConnect. Tous droits réservés. Cette page est publiée pour se conformer à la politique de sécurité enfantine de Google Play Store.</p>
+                <p>SafeConnect est une application réservée aux personnes majeures (18 ans et plus).</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Petite animation pour les cartes au défilement
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.card');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            cards.forEach(card => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                observer.observe(card);
+            });
+            
+            // Animation pour le header au scroll
+            window.addEventListener('scroll', function() {
+                const header = document.querySelector('header');
+                if (window.scrollY > 50) {
+                    header.style.padding = '15px 0';
+                } else {
+                    header.style.padding = '30px 0';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
