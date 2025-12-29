@@ -1,0 +1,51 @@
+{
+  "applinks":{
+    "apps":[
+       
+    ],
+    "details":[
+      {
+        "appIDs":[
+          "5ZFRS9B9FR.com.arhinteck.toucliner"
+        ],
+        "components":[
+         {
+            "/":"/home/*",
+            "comment":"Matches any URL with a path that starts with /product/."
+          },
+          
+          {
+            "/":"/home/booking",
+            "comment":"Matches URL with a path /login"
+          },
+           {
+            "/":"/home/booking/*",
+            "comment":"Matches any URL with a path that starts with /product/."
+          },
+      
+          {
+            "/":"/booking/*",
+            "exclude":true,
+            "comment":"Matches URL with a path /secret and instructs the system not to open it as a universal link."
+          },
+          
+         {
+            "/":"/home/paystack",
+            "comment":"Matches URL with a path /touclin/paystack"
+          },
+          
+           {
+            "/":"/home/paystack/*",
+            "comment":"Matches any URL with a path that starts with /paystack/."
+          },
+          
+           {
+            "/":"/paystack/*",
+            "exclude":true,
+            "comment":"Matches URL with a path /secret and instructs the system not to open it as a universal link."
+          },
+        ]
+      }
+    ]
+  }
+}

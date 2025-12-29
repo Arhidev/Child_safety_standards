@@ -1,0 +1,11 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.arhinteck.touclin",
+    "sha256_cert_fingerprints": [
+        "A8:D4:F7:35:F5:95:9B:65:DD:7C:48:CB:BF:B9:AB:56:A5:59:55:DB:5D:BE:2A:47:33:C1:4F:E6:8A:20:64:FE",
+        "44:ac:05:fb:aa:a1:6d:9e:f3:b7:d9:d7:f4:62:ef:60:de:0e:fd:7f:f4:4f:d5:61:36:6b:ab:89:36:a9:d2:06"
+    ]
+  }
+}]
